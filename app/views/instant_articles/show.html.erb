@@ -23,11 +23,11 @@
         </figure>
         <h3 class="op-kicker"><%= article.kicker %></h3>
       </header>
-      <%= article.body %>
+      <%= article.body.html_safe %>
       <footer>
         <aside>
           <p><%= article.author.name %></p>
-          <%= article.author.bio %>
+          <%= article.author.bio.html_safe %>
         </aside>
       </footer>
     </article>
