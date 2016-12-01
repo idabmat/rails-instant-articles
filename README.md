@@ -1,5 +1,8 @@
 # Integrating a Rails Blog with Facebook's Instant Articles
 
+[Blog post
+here](https://codingontheroad.com/code/2016/11/30/integrating-a-rails-blog-with-facebook-instant-articles/)
+
 This is a simple demo with a minimal blog generating a RSS feed of instant
 articles.
 
