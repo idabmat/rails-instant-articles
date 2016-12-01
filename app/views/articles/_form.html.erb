@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :author_id %>
-    <%= f.select :author_id, options_from_collection_for_select(Author.all, "id", "name") %>
+    <%= f.select :author_id, options_from_collection_for_select(Author.sorted, "id", "name") %>
   </div>
 
   <div class="field">
@@ -33,7 +33,8 @@
 
   <div class="field">
     <%= f.label :body %>
-    <%= f.text_area :body %>
+    <%= f.text_area :body, hidden: true %>
+    <trix-editor input="article_body"></trix-editor>
   </div>
 
   <div class="actions">

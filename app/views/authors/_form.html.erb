@@ -18,7 +18,8 @@
 
   <div class="field">
     <%= f.label :bio %>
-    <%= f.text_area :bio %>
+    <%= f.text_area :bio, hidden: true %>
+    <trix-editor input="author_bio"></trix-editor>
   </div>
 
   <div class="actions">
