@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" prefix="op: http://media.facebook.com/op#">
+  <head>
+    <title>My Blog | <%= article.title %></title>
+    <meta charset="utf-8">
+    <link rel="canonical" href="<%= article_url(article.id) %>">
+    <meta property="op:markup_version" content="v1.0">
+  </head>
+  <body>
+    <article>
+      <header>
+        <h1><%= article.title %></h1>
+        <h2><%= article.subtitle %></h2>
+        <time class="op-published" datetime="<%= article.created_at.iso8601 %>">
+          <%= article.created_at %>
+        </time>
+        <address>
+          <%= link_to article.author.name, article.author %>
+        </address>
+        <figure>
+          <img src="<%= article.cover_url %>" alt="<%= article.cover_description %>">
+          <figcaption><%= article.cover_description %></figcaption>
+        </figure>
+        <h3 class="op-kicker"><%= article.kicker %></h3>
+      </header>
+      <%= article.body %>
+      <footer>
+        <aside>
+          <p><%= article.author.name %></p>
+          <%= article.author.bio %>
+        </aside>
+      </footer>
+    </article>
+  </body>
+</html>

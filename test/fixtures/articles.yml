@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  subtitle: MyString
+  kicker: MyString
+  body: MyText
+  author: one
+
+two:
+  title: MyString
+  subtitle: MyString
+  kicker: MyString
+  body: MyText
+  author: two

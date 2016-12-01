@@ -1,0 +1,2 @@
+module InstantArticlesHelper
+end
